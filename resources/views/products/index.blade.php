@@ -69,12 +69,30 @@
             
             <div class="col-md-9 mt-1 rounded">
                         
-                        <div class="container">
+                        <!-- <div class="container">
                         <div class="row">
                             
                             <img src="{{ asset('img/きらステだより.jpg')}}" width="280" height="1200"></a>
                         </div>
-                        </div>
+                        </div> -->
+
+
+  <table>
+
+
+    <tr>
+    <!-- 最新の日付を取得 -->
+      <!-- <th>投稿日</th><td>{{ $products->created_at }}</td> -->
+    </tr>
+
+    <tr>
+        <!-- 最新の画像を取得 -->
+          <img src="{{ asset('storage/products/'. $products->image_name)}}" width="960" height="1200"></a>
+    </tr>
+ 
+  </table>
+ 
+
                 </div>
                     
             </div>           
@@ -95,38 +113,3 @@
 
 
 
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="ja">
-
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Laravel基礎</title>
-</head>
-
-<body>
-   <table>
-       <tr>
-           <th>ID</th>
-           <th>商品名</th>
-           <th>価格</th>
-           <th>作成日時</th>
-           <th>更新日時</th>
-       </tr>
-       @foreach($products as $product)
-           <tr>
-               <td>{{ $product->id }}</td>
-               <td>{{ $product->product_name }}</td>
-               <td>{{ $product->price }}</td>
-               <td>{{ $product->created_at }}</td>
-               <td>{{ $product->updated_at }}</td>
-           </tr>            
-       @endforeach       
-   </table>
-</body>
-
-</html> -->

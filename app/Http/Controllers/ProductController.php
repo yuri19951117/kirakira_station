@@ -12,7 +12,13 @@ use App\Http\Requests\ProductStoreRequest;
 class ProductController extends Controller {
     public function index() {
         // productsテーブルからすべてのデータを取得し、変数$productsに代入する
-        $products = DB::table('products')->get();
+        $products = DB::table('products')
+
+        ->select('id','created_at','image_name') //id、作成時間、画像名を取得
+        ->orderBy('created_at', 'desc')->first(); //作成時間を新しい順に並び替え、一番最新を取得
+      
+
+
 
         // 変数$productsをproducts/index.blade.phpファイルに渡す
         return view('products.index', compact('products'));
@@ -35,7 +41,7 @@ class ProductController extends Controller {
     public function store(ProductStoreRequest $request) {
         // フォームの入力内容をもとに、テーブルにデータを追加する
         $product = new Product();
-        $product->product_name = "test";
+        $product->product_name = "画像アップロード";
         $product->price = $request->user();
         $product->vendor_code = $request->input('vendor_code');
 
