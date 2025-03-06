@@ -33,9 +33,7 @@
   img.display{
     width: 960px;
     height: 1200px;
-}
-
-@media only screen and (max-width: 767px){
+  }@media screen and (min-width:600px) {
   img.display {
     width: 400px;
     height: 600px;
