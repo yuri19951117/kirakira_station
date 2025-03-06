@@ -87,6 +87,7 @@
 
     <tr>
         <!-- 最新の画像を取得 -->
+        
           <img src="{{ asset('storage/products/'. $products->image_name)}}" class="display"></a>
           
     </tr>
