@@ -32,10 +32,10 @@
 
   img.display{
     width: 350px;
-    height: 550px;
-  /* }@media screen and (min-width:1025px) {
+    height: 600px;
+  }@media screen and (min-width:1025px) {
   img.display {
     width: 960px;
     height: 1200px;
-  } */
+  }
 }
