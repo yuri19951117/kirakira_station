@@ -31,11 +31,11 @@
             &nbsp;<i class="fa fa-envelope-o fa-1x"></i>&nbsp;kirakirast.21@gmail.com<br>
             &nbsp;<i class="fa fa-phone fa-1x"></i>&nbsp;090-3727-3650（代表：井本）<br>
             <br>
+            <h5> ◆カレンダー </h5>
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&showPrint=0&showTitle=0&showTz=0&showCalendars=0&src=a2lyYWtpcmFzdC4yMUBnbWFpbC5jb20&color=%23039BE5" style="border-width:0" width="310" height="310" frameborder="0" scrolling="no"></iframe>            <br>
+            <br>
             <h5> ◆SNS各種 </h5>
-                <img src="{{ asset('img/instagram.jpg')}}" width="280" height="280"></a><br>
-
-                <br>
-                &nbsp;&nbsp;<img src="{{ asset('img/LINECODE.jpg')}}" width="240" height="240"></a><br>
+                <img src="{{ asset('img/instagram.jpg')}}" width="160" height="160"></a>&nbsp;<img src="{{ asset('img/LINECODE.jpg')}}" width="130" height="130"></a><br>
 
                 <br>
                 <br>
